@@ -11,13 +11,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="script.js" defer></script>
     <title>task navbar</title>
   </head>
   <body>
     <nav class="nav-bar">
       <h1>My Website</h1>
       <div class="sidebar">
-        <span type="button" onclick="hideSideBar()">
+        <span type="button" class="menu-btn-close" onclick="hideSideBar()">
           <i class="fa-solid fa-xmark"></i>
         </span>
         <ul class="sidebar-menu">
@@ -28,26 +29,16 @@
           <li>Product</li>
         </ul>
       </div>
-      <ul class="nav-bar-menu">
-        <li class="hideOnMobile">Home</li>
-        <li class="hideOnMobile">About</li>
-        <li class="hideOnMobile">Contact</li>
-        <li class="hideOnMobile">Blog</li>
-        <li class="hideOnMobile">Product</li>
+      <ul class="nav-bar-menu hideOnMobile">
+        <li >Home</li>
+        <li >About</li>
+        <li >Contact</li>
+        <li >Blog</li>
+        <li>Product</li>
       </ul>
-      <span type="button" onclick="showSideBar()">
+      <span type="button" class="menu-btn" onclick="showSideBar()">
         <i class="fa-solid fa-bars"></i>
       </span>
     </nav>
-    <script>
-      function showSidebar() {
-        const sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "flex";
-      }
-      function hideSidebar() {
-        const sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "none";
-      }
-    </script>
   </body>
 </html>

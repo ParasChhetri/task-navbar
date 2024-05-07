@@ -83,24 +83,28 @@ body {
     width: 100%;
     padding-inline: 0.5rem;
     padding-block: 1rem;
+    color: white;
 }
 
 .sidebar-menu li:hover {
     background-color: aqua;
     cursor: pointer;
+    color: black;
 }
 
 .menu-btn-close {
     padding: 0.75rem;
     font-size: 2rem;
     cursor: pointer;
+    color: white;
 }
 
 .menu-btn {
     display: none;
+    color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {
     .hideOnMobile {
         display: none;
     }
